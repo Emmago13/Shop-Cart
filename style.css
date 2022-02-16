@@ -47,6 +47,11 @@
   background: #eee;
   padding: 5px;
 }
+.toast {
+  top: 5%;
+  position: fixed;
+  left: 41%;
+}
 
 .shopping-cart-total {
   min-height: 96px;
