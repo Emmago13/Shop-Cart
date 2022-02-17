@@ -1,3 +1,8 @@
+const { AOS } = require("aos");
+
+AOS.init();
+
+
 const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
 
 
