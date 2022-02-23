@@ -1,14 +1,17 @@
 const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
+const shoppingCartItemsContainer = document.querySelector('.shoppingCartItemsContainer');
+const buyButton = document.querySelector('.comprarButton');
 
+
+//AddEventListeners
 
 addToShoppingCartButtons.forEach(addToCartButton => {
-    addToCartButton.addEventListener('click', addToCartClicked)
-})
+    addToCartButton.addEventListener('click', addToCartClicked);
+});
+buyButton.addEventListener('click', buyButtonClicked);
 
-const shoppingCartItemsContainer = document.querySelector('.shoppingCartItemsContainer');
 
-const buyButton = document.querySelector('.comprarButton')
-buyButton.addEventListener('click', buyButtonClicked)
+//Functions
 
 function addToCartClicked(event) {
     const button = event.target;
