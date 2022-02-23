@@ -1,18 +1,25 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
 .item {
-  border: 2px solid #000;
+  border: 2px solid rgba(0,0,0,0.1);
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .item-title {
-  text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
 }
 
 .item-image {
-  height: 300px;
+  height: 500px;
   width: 100%;
+}
+@media screen and (max-width: 400px) {
+  .item-image{
+    height: 300px;
+  }
 }
 
 .item-details {
@@ -24,6 +31,7 @@
 
 .item-details > .item-price {
   margin: 0;
+  font-weight: 400;
 }
 
 /* ? SHOPPING CART */
@@ -57,6 +65,24 @@
   min-height: 96px;
 }
 
+.container{
+  margin: 30px auto;
+}
+
+.row-own{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .row{
   margin: 50px 0;
+  justify-content: space-evenly;
+}
+
+.items:nth-child(1){
+  margin-top: 100px;
+}
+
+.btn:focus{
+  box-shadow: none;
 }
