@@ -16,11 +16,6 @@ body{
   height: 500px;
   width: 100%;
 }
-@media screen and (max-width: 400px) {
-  .item-image{
-    height: 300px;
-  }
-}
 
 .item-details {
   display: flex;
@@ -85,4 +80,13 @@ body{
 
 .btn:focus{
   box-shadow: none;
+}
+
+@media screen and (max-width: 400px) {
+  .item-image{
+    height: 300px;
+  }
+  .toast{
+    left: 15%;
+  }
 }
